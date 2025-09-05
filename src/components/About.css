@@ -1,0 +1,520 @@
+.about {
+  background: var(--bg-primary);
+  position: relative;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.about-text {
+  color: var(--text-primary);
+}
+
+.about-intro h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+
+.about-intro p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.about-highlights {
+  margin-top: 2rem;
+}
+
+.highlight-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.highlight-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.highlight-icon {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-top: 0.2rem;
+  flex-shrink: 0;
+}
+
+.highlight-item h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.highlight-item p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.about-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.detail-card {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.detail-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.detail-card h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.education-item,
+.location-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.education-icon,
+.location-icon {
+  font-size: 1.3rem;
+  color: var(--primary-color);
+  margin-top: 0.2rem;
+  flex-shrink: 0;
+}
+
+.education-item h5,
+.location-item h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  color: var(--text-primary);
+}
+
+.education-item p,
+.location-item p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 0.3rem;
+}
+
+.education-item span {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.experience-summary {
+  margin-top: 1rem;
+}
+
+.exp-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: var(--bg-secondary);
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+
+.exp-role {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.exp-company {
+  font-size: 0.95rem;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.exp-duration {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.experience-summary p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.about-stats {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+  .about-content {
+    gap: 3rem;
+  }
+  
+  .about-intro h3 {
+    font-size: 1.6rem;
+  }
+  
+  .about-intro p {
+    font-size: 1rem;
+  }
+  
+  .highlight-item {
+    padding: 1.2rem;
+  }
+  
+  .detail-card {
+    padding: 1.5rem;
+  }
+  
+  .about-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  
+  .about-intro h3 {
+    font-size: 1.5rem;
+  }
+  
+  .about-intro p {
+    font-size: 0.95rem;
+  }
+  
+  .about-highlights {
+    margin-top: 1.5rem;
+  }
+  
+  .highlight-item {
+    padding: 1rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .highlight-icon {
+    font-size: 1.3rem;
+  }
+  
+  .highlight-item h4 {
+    font-size: 1rem;
+  }
+  
+  .highlight-item p {
+    font-size: 0.9rem;
+  }
+  
+  .about-details {
+    gap: 1.2rem;
+  }
+  
+  .detail-card {
+    padding: 1.5rem;
+  }
+  
+  .detail-card h4 {
+    font-size: 1.1rem;
+  }
+  
+  .education-item,
+  .location-item {
+    gap: 0.8rem;
+  }
+  
+  .education-icon,
+  .location-icon {
+    font-size: 1.2rem;
+  }
+  
+  .education-item h5,
+  .location-item h5 {
+    font-size: 1rem;
+  }
+  
+  .education-item p,
+  .location-item p {
+    font-size: 0.9rem;
+  }
+  
+  .exp-item {
+    padding: 0.8rem;
+  }
+  
+  .exp-role {
+    font-size: 0.95rem;
+  }
+  
+  .exp-company {
+    font-size: 0.9rem;
+  }
+  
+  .exp-duration {
+    font-size: 0.85rem;
+  }
+  
+  .experience-summary p {
+    font-size: 0.9rem;
+  }
+  
+  .about-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 2.5rem;
+  }
+  
+  .stat-card {
+    padding: 1.2rem;
+  }
+  
+  .stat-number {
+    font-size: 1.8rem;
+  }
+  
+  .stat-label {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-content {
+    gap: 2rem;
+  }
+  
+  .about-intro h3 {
+    font-size: 1.3rem;
+  }
+  
+  .about-intro p {
+    font-size: 0.9rem;
+  }
+  
+  .about-highlights {
+    margin-top: 1.2rem;
+  }
+  
+  .highlight-item {
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.8rem;
+  }
+  
+  .highlight-icon {
+    font-size: 1.2rem;
+  }
+  
+  .highlight-item h4 {
+    font-size: 0.95rem;
+  }
+  
+  .highlight-item p {
+    font-size: 0.85rem;
+  }
+  
+  .about-details {
+    gap: 1rem;
+  }
+  
+  .detail-card {
+    padding: 1.2rem;
+  }
+  
+  .detail-card h4 {
+    font-size: 1rem;
+  }
+  
+  .education-item,
+  .location-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.6rem;
+  }
+  
+  .education-icon,
+  .location-icon {
+    font-size: 1.1rem;
+  }
+  
+  .education-item h5,
+  .location-item h5 {
+    font-size: 0.95rem;
+  }
+  
+  .education-item p,
+  .location-item p {
+    font-size: 0.85rem;
+  }
+  
+  .exp-item {
+    padding: 0.6rem;
+    text-align: center;
+  }
+  
+  .exp-role {
+    font-size: 0.9rem;
+  }
+  
+  .exp-company {
+    font-size: 0.85rem;
+  }
+  
+  .exp-duration {
+    font-size: 0.8rem;
+  }
+  
+  .experience-summary p {
+    font-size: 0.85rem;
+    text-align: center;
+  }
+  
+  .about-stats {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+    margin-top: 2rem;
+  }
+  
+  .stat-card {
+    padding: 1rem;
+  }
+  
+  .stat-number {
+    font-size: 1.6rem;
+  }
+  
+  .stat-label {
+    font-size: 0.75rem;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1400px) {
+  .about-content {
+    gap: 5rem;
+  }
+  
+  .about-intro h3 {
+    font-size: 2rem;
+  }
+  
+  .about-intro p {
+    font-size: 1.2rem;
+  }
+  
+  .about-stats {
+    gap: 2rem;
+  }
+  
+  .stat-card {
+    padding: 2rem;
+  }
+  
+  .stat-number {
+    font-size: 2.5rem;
+  }
+}
+
+/* Touch devices */
+@media (hover: none) and (pointer: coarse) {
+  .highlight-item:hover,
+  .detail-card:hover,
+  .stat-card:hover {
+    transform: none;
+  }
+  
+  .highlight-item:active,
+  .detail-card:active,
+  .stat-card:active {
+    transform: scale(0.98);
+  }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+  .highlight-item,
+  .detail-card,
+  .stat-card {
+    border: 2px solid black;
+  }
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  .highlight-item,
+  .detail-card,
+  .stat-card {
+    background: var(--white);
+    border-color: var(--border-color);
+  }
+}

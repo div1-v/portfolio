@@ -1,0 +1,491 @@
+.skills {
+  background: var(--bg-primary);
+  position: relative;
+}
+
+.skills-intro {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.skills-intro p {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.skill-category {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.skill-category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--bg-secondary);
+}
+
+.category-icon-wrapper {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, var(--category-color), var(--primary-color));
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.category-icon {
+  font-size: 1.3rem;
+  color: white;
+}
+
+.category-header h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1.2rem;
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+}
+
+.skill-item:hover {
+  background: var(--primary-color);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+}
+
+.skill-icon-wrapper {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.skill-icon {
+  font-size: 1.3rem;
+}
+
+.skill-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-align: center;
+  line-height: 1.2;
+}
+
+.skill-item:hover .skill-name {
+  color: white;
+}
+
+.skills-summary {
+  margin-top: 3rem;
+}
+
+.summary-card {
+  background: white;
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.summary-card h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--text-primary);
+  text-align: center;
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.achievement-item {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1.5rem;
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.achievement-item:hover {
+  background: var(--primary-color);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+}
+
+.achievement-icon {
+  font-size: 2rem;
+  color: var(--primary-color);
+  flex-shrink: 0;
+}
+
+.achievement-item:hover .achievement-icon {
+  color: white;
+}
+
+.achievement-item h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.achievement-item:hover h4 {
+  color: white;
+}
+
+.achievement-item p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.achievement-item:hover p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+  .skills-container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .skill-category {
+    padding: 1.8rem;
+  }
+  
+  .category-header h3 {
+    font-size: 1.2rem;
+  }
+  
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+  
+  .achievements-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+  
+  .summary-card {
+    padding: 2.5rem;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .skills-intro {
+    margin-bottom: 2.5rem;
+  }
+  
+  .skills-intro p {
+    font-size: 1rem;
+  }
+  
+  .skills-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .skill-category {
+    padding: 1.5rem;
+  }
+  
+  .category-header {
+    gap: 0.8rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .category-icon-wrapper {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .category-icon {
+    font-size: 1.2rem;
+  }
+  
+  .category-header h3 {
+    font-size: 1.1rem;
+  }
+  
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 0.8rem;
+  }
+  
+  .skill-item {
+    padding: 1rem;
+    gap: 0.6rem;
+  }
+  
+  .skill-icon-wrapper {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .skill-icon {
+    font-size: 1.1rem;
+  }
+  
+  .skill-name {
+    font-size: 0.8rem;
+  }
+  
+  .skills-summary {
+    margin-top: 2.5rem;
+  }
+  
+  .summary-card {
+    padding: 2rem;
+  }
+  
+  .summary-card h3 {
+    font-size: 1.6rem;
+  }
+  
+  .achievements-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+  
+  .achievement-item {
+    padding: 1.2rem;
+    gap: 1rem;
+  }
+  
+  .achievement-icon {
+    font-size: 1.8rem;
+  }
+  
+  .achievement-item h4 {
+    font-size: 1rem;
+  }
+  
+  .achievement-item p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-intro {
+    margin-bottom: 2rem;
+  }
+  
+  .skills-intro p {
+    font-size: 0.9rem;
+  }
+  
+  .skills-container {
+    gap: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .skill-category {
+    padding: 1.2rem;
+  }
+  
+  .category-header {
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+  }
+  
+  .category-icon-wrapper {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .category-icon {
+    font-size: 1.1rem;
+  }
+  
+  .category-header h3 {
+    font-size: 1rem;
+  }
+  
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.6rem;
+  }
+  
+  .skill-item {
+    padding: 0.8rem;
+    gap: 0.5rem;
+  }
+  
+  .skill-icon-wrapper {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .skill-icon {
+    font-size: 1rem;
+  }
+  
+  .skill-name {
+    font-size: 0.75rem;
+  }
+  
+  .skills-summary {
+    margin-top: 2rem;
+  }
+  
+  .summary-card {
+    padding: 1.5rem;
+  }
+  
+  .summary-card h3 {
+    font-size: 1.4rem;
+  }
+  
+  .achievements-grid {
+    gap: 1rem;
+  }
+  
+  .achievement-item {
+    padding: 1rem;
+    gap: 0.8rem;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .achievement-icon {
+    font-size: 1.6rem;
+  }
+  
+  .achievement-item h4 {
+    font-size: 0.95rem;
+  }
+  
+  .achievement-item p {
+    font-size: 0.85rem;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1400px) {
+  .skills-container {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2.5rem;
+  }
+  
+  .skill-category {
+    padding: 2.5rem;
+  }
+  
+  .category-header h3 {
+    font-size: 1.4rem;
+  }
+  
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  
+  .summary-card {
+    padding: 4rem;
+  }
+  
+  .summary-card h3 {
+    font-size: 2.2rem;
+  }
+  
+  .achievements-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+}
+
+/* Touch devices */
+@media (hover: none) and (pointer: coarse) {
+  .skill-category:hover,
+  .skill-item:hover,
+  .achievement-item:hover {
+    transform: none;
+  }
+  
+  .skill-category:active,
+  .skill-item:active,
+  .achievement-item:active {
+    transform: scale(0.98);
+  }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+  .skill-category,
+  .summary-card {
+    border: 2px solid black;
+  }
+  
+  .skill-item,
+  .achievement-item {
+    border: 1px solid black;
+  }
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  .skill-category,
+  .summary-card {
+    background: var(--white);
+    border-color: var(--border-color);
+  }
+  
+  .skill-item,
+  .achievement-item {
+    background: var(--bg-secondary);
+    border-color: var(--border-color);
+  }
+}

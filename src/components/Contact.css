@@ -1,0 +1,377 @@
+.contact {
+  background: var(--bg-primary);
+  position: relative;
+}
+
+.contact-intro {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.contact-intro p {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.contact-info {
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+}
+
+.contact-info h3 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+
+.contact-info p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
+}
+
+.contact-methods {
+  margin-bottom: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.contact-method {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 2rem;
+  background: white;
+  border-radius: 15px;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.contact-method:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.method-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.method-content {
+  text-align: left;
+}
+
+.method-content h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.method-content p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.social-links {
+  margin-top: 3rem;
+}
+
+.social-links h4 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.social-link {
+  width: 60px;
+  height: 60px;
+  background: white;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.social-link:hover {
+  background: var(--primary-color);
+  color: white;
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(37, 99, 235, 0.3);
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+  .contact-methods {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .contact-method {
+    padding: 1.8rem;
+  }
+  
+  .method-icon {
+    width: 55px;
+    height: 55px;
+    font-size: 1.3rem;
+  }
+  
+  .method-content h4 {
+    font-size: 1.1rem;
+  }
+  
+  .method-content p {
+    font-size: 0.95rem;
+  }
+  
+  .social-link {
+    width: 55px;
+    height: 55px;
+    font-size: 1.4rem;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .contact-intro {
+    margin-bottom: 3rem;
+  }
+  
+  .contact-intro p {
+    font-size: 1rem;
+  }
+  
+  .contact-content {
+    min-height: auto;
+    padding: 2rem 0;
+  }
+  
+  .contact-info {
+    max-width: 100%;
+  }
+  
+  .contact-info h3 {
+    font-size: 1.8rem;
+  }
+  
+  .contact-info p {
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .contact-methods {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .contact-method {
+    padding: 1.5rem;
+  }
+  
+  .method-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+  
+  .method-content h4 {
+    font-size: 1rem;
+  }
+  
+  .method-content p {
+    font-size: 0.9rem;
+  }
+  
+  .social-links {
+    margin-top: 2.5rem;
+  }
+  
+  .social-links h4 {
+    font-size: 1.2rem;
+  }
+  
+  .social-icons {
+    gap: 1.2rem;
+  }
+  
+  .social-link {
+    width: 50px;
+    height: 50px;
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-intro {
+    margin-bottom: 2.5rem;
+  }
+  
+  .contact-intro p {
+    font-size: 0.9rem;
+  }
+  
+  .contact-content {
+    padding: 1.5rem 0;
+  }
+  
+  .contact-info h3 {
+    font-size: 1.6rem;
+  }
+  
+  .contact-info p {
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-methods {
+    gap: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-method {
+    padding: 1.2rem;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .method-content {
+    text-align: center;
+  }
+  
+  .method-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 1.1rem;
+  }
+  
+  .method-content h4 {
+    font-size: 0.95rem;
+  }
+  
+  .method-content p {
+    font-size: 0.85rem;
+  }
+  
+  .social-links {
+    margin-top: 2rem;
+  }
+  
+  .social-links h4 {
+    font-size: 1.1rem;
+  }
+  
+  .social-icons {
+    gap: 1rem;
+  }
+  
+  .social-link {
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1400px) {
+  .contact-methods {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+  }
+  
+  .contact-method {
+    padding: 2.5rem;
+  }
+  
+  .method-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 1.6rem;
+  }
+  
+  .method-content h4 {
+    font-size: 1.3rem;
+  }
+  
+  .method-content p {
+    font-size: 1.1rem;
+  }
+  
+  .social-link {
+    width: 70px;
+    height: 70px;
+    font-size: 1.7rem;
+  }
+}
+
+/* Touch devices */
+@media (hover: none) and (pointer: coarse) {
+  .contact-method:hover,
+  .social-link:hover {
+    transform: none;
+  }
+  
+  .contact-method:active,
+  .social-link:active {
+    transform: scale(0.98);
+  }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+  .contact-method,
+  .social-link {
+    border: 2px solid black;
+  }
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  .contact-method,
+  .social-link {
+    background: var(--white);
+    border-color: var(--border-color);
+  }
+}
