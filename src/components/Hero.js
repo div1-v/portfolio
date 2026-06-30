@@ -4,6 +4,22 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaCode, FaServer, FaDatabase, FaCloud
 import './Hero.css';
 
 const Hero = () => {
+  const startDate = new Date('2023-06-01');
+  const currentDate = new Date();
+
+  const experienceYears =
+    currentDate.getFullYear() -
+    startDate.getFullYear() -
+    (
+      currentDate.getMonth() < startDate.getMonth() ||
+      (currentDate.getMonth() === startDate.getMonth() &&
+        currentDate.getDate() < startDate.getDate())
+        ? 1
+        : 0
+    );
+
+  const experienceText = `${experienceYears}+`;
+
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -216,12 +232,12 @@ const Hero = () => {
         >
           <div className="stats-container">
             <div className="stat-item">
-              <div className="stat-number">2+</div>
+              <div className="stat-number">{experienceText}</div>
               <div className="stat-label">Years Experience</div>
             </div>
             <div className="stat-divider"></div>
             <div className="stat-item">
-              <div className="stat-number">10+</div>
+              <div className="stat-number">20+</div>
               <div className="stat-label">Projects Completed</div>
             </div>
             <div className="stat-divider"></div>

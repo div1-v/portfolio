@@ -110,7 +110,7 @@ const Skills = () => {
           viewport={{ once: true }}
         >
           <p>
-            With 2+ years of experience in backend development, I've mastered a wide range of technologies 
+            With 3+ years of experience in backend development, I've mastered a wide range of technologies 
             and tools across different domains.
           </p>
         </motion.div>
